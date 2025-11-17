@@ -2,8 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import altair as alt
+import requests
 from pathlib import Path
 from io import StringIO
+GITHUB_USERNAME = "sstankala"  # e.g. "SaiTankala"
+GITHUB_REPO = "portfolio_hub"
 
 # ============================================================
 # GLOBAL CONFIG & THEME
@@ -111,7 +114,7 @@ def landing_page():
 
     # ---------- Title + Intro ----------
     st.markdown(
-        '<p class="landing-title">Portfolio of Projects & Tool kits Customer Success, Cloud Transformation & Program Management</p>',
+        '<p class="landing-title">Portfolio of Projects & Tools for Customer Success, Cloud Transformation & Program Management</p>',
         unsafe_allow_html=True
     )
     st.markdown(
@@ -766,23 +769,268 @@ def page_pm_toolkit():
     else:
         st.info(f"Unsupported file type `{ftype}` for now.")
 
+def page_profile():
+    # ---------- CSS for profile page ----------
+    st.markdown("""
+        <style>
+            .profile-header-title {
+                font-size: 32px !important;
+                font-weight: 750 !important;
+                margin-bottom: 0.2rem;
+            }
+            .profile-header-subtitle {
+                font-size: 18px !important;
+                color: #CCCCCC !important;
+                margin-bottom: 1.5rem;
+            }
+            .profile-section-title {
+                font-size: 20px !important;
+                font-weight: 650 !important;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+            .profile-body-text {
+                font-size: 15px !important;
+                line-height: 1.6 !important;
+            }
+            .chip-row {
+                margin-top: 0.6rem;
+                margin-bottom: 0.8rem;
+            }
+            .chip {
+                display: inline-block;
+                padding: 0.12rem 0.6rem;
+                margin: 0.08rem;
+                border-radius: 999px;
+                font-size: 12px;
+                font-weight: 600;
+                border: 1px solid rgba(255, 255, 255, 0.35);
+                background: rgba(255, 255, 255, 0.04);
+            }
+            .chip-cs {
+                border-color: #2ecc71aa;
+                color: #b8f5cd;
+            }
+            .chip-cloud {
+                border-color: #3498dbaa;
+                color: #c8e7ff;
+            }
+            .chip-pm {
+                border-color: #f1c40faa;
+                color: #ffe9b8;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # ---------- Header ----------
+    col_left, col_right = st.columns([1, 2])
+
+    avatar_url = f"https://github.com/{GITHUB_USERNAME}.png?size=220"
+
+    with col_left:
+        st.image(avatar_url, caption="Sai Tankala", use_container_width=False)
+        st.markdown(
+            """
+            <div class="chip-row">
+                <span class="chip chip-cs">Customer Success</span>
+                <span class="chip chip-cs">Service Experience</span>
+                <span class="chip chip-cloud">Cloud Transformation</span>
+                <span class="chip chip-pm">Program Delivery</span>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    with col_right:
+        st.markdown(
+            '<p class="profile-header-title">👋 About Sai Tankala</p>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            """
+            <p class="profile-header-subtitle">
+            Sr. Customer Success & Service Experience Leader · Cloud & SaaS Programs · Enterprise Delivery
+            </p>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            """
+            <p class="profile-body-text">
+            I focus on helping customers realize value from complex platforms – across
+            <strong>Customer Success</strong>, <strong>cloud adoption</strong>, and
+            <strong>program delivery</strong>. This portfolio hub demonstrates how I think about
+            health scoring, cloud readiness, and PMO tooling in a hands-on way using Python and Streamlit.
+            </p>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    st.markdown("---")
+
+        # ---------- GitHub README from portfolio_hub repo ----------
+    st.markdown(
+        '<p class="profile-section-title">📄 GitHub README (portfolio_hub)</p>',
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        """
+        <p class="profile-body-text">
+        The content below is pulled directly from my
+        <strong>portfolio_hub</strong> repository README on GitHub.
+        </p>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    raw_url = "https://raw.githubusercontent.com/sstankala/portfolio_hub/main/README.md"
+
+    try:
+        resp = requests.get(raw_url, timeout=5)
+    except Exception as e:
+        st.error(f"Could not reach GitHub: {e}")
+        return
+
+    if resp.status_code != 200:
+        st.error(
+            f"Unable to load README.md from portfolio_hub "
+            f"(status code: {resp.status_code})."
+        )
+        return
+
+    content = resp.text
+
+    # Render the repo README as markdown
+    st.markdown(content, unsafe_allow_html=True)
+
+
 
 
 # ============================================================
 # MAIN NAVIGATION (SIDEBAR)
 # ============================================================
-st.sidebar.title("📚 Portfolio Hub")
-page = st.sidebar.radio(
-    "Go to:",
-    ["🏠 Landing", "Customer Success Health Dashboard",
-     "Cloud Readiness Assessment Tool", "PM Toolkit + Templates Generator"],
+st.markdown(
+    """
+    <style>
+    /* ============ SIDEBAR MENU STYLING ============ */
+
+    /* Overall sidebar top padding slightly reduced */
+    section[data-testid="stSidebar"] > div:nth-child(1) {
+        padding-top: 0.3rem !important;
+    }
+
+    /* ---------- Top-level menu (Profile / Tools Overview) ---------- */
+
+    /* Wrap for top-level radio group */
+    section[data-testid="stSidebar"] .sidebar-top-level label {
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        margin-bottom: 0.25rem !important;
+        padding: 0.15rem 0.3rem !important;
+        border-radius: 6px;
+    }
+
+    /* ---------- "Tools" header above submenu ---------- */
+
+    section[data-testid="stSidebar"] h3 {
+        margin-top: 0.1rem !important;
+        margin-bottom: 0.15rem !important;
+        padding-bottom: 0 !important;
+        font-size: 14px !important;
+    }
+
+    /* ---------- Submenu container (Overview / CS / Cloud / PM) ---------- */
+
+    section[data-testid="stSidebar"] .sidebar-submenu {
+        margin-top: 0.05rem !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* Submenu radio labels */
+    section[data-testid="stSidebar"] .sidebar-submenu label {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        padding-top: 0.12rem !important;
+        padding-bottom: 0.12rem !important;
+        margin-bottom: 0.05rem !important;
+        padding-left: 8px !important;    /* subtle indent for child items */
+        border-radius: 6px;
+    }
+
+    /* ---------- Generic radio item tweaks (applies to both levels) ---------- */
+
+    section[data-testid="stSidebar"] div[role="radiogroup"] > label {
+        margin-bottom: 0.05rem !important;
+        padding: 0.15rem 0.3rem !important;
+        border-radius: 6px;
+    }
+
+    /* Hover effect for all menu items */
+    section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+        cursor: pointer;
+    }
+
+    /* Slightly reduce left padding of inner nav container */
+    section[data-testid="stSidebar"] div[data-testid="stSidebarNav"] {
+        padding-left: 0.1rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
 )
 
-if page == "🏠 Landing":
-    landing_page()
-elif page == "Customer Success Health Dashboard":
-    page_customer_success()
-elif page == "Cloud Readiness Assessment Tool":
-    page_cloud_readiness()
-else:
-    page_pm_toolkit()
+
+def sidebar_navigation():
+    st.sidebar.title("📚 Portfolio Hub")
+
+    # Top-level: Profile vs Tools Overview
+    with st.sidebar.container():
+        st.sidebar.markdown('<div class="sidebar-top-level">', unsafe_allow_html=True)
+        top_choice = st.sidebar.radio(
+            "Section",
+            ["👤 Profile", "🛠️ Tools Overview"],
+            index=0,               # default to Tools Overview
+            label_visibility="collapsed",
+        )
+        st.sidebar.markdown("</div>", unsafe_allow_html=True)
+
+    # Default values
+    sub_choice = None
+
+    # Only show submenu when Tools Overview is selected
+    if top_choice == "🛠️ Tools Overview":
+        st.sidebar.markdown("### Tools")
+        st.sidebar.markdown('<div class="sidebar-submenu">', unsafe_allow_html=True)
+        sub_choice = st.sidebar.radio(
+            "Tool",
+            [
+                "🏠 Overview",
+                "📊 Customer Success Dashboard",
+                "☁️ Cloud Readiness Tool",
+                "🗂️ PM Toolkit + Templates",
+            ],
+            index=0,
+            label_visibility="collapsed",
+        )
+        st.sidebar.markdown("</div>", unsafe_allow_html=True)
+
+    return top_choice, sub_choice
+
+
+
+top_choice, sub_choice = sidebar_navigation()
+
+if top_choice == "👤 Profile":
+    page_profile()
+
+else:  # 🛠️ Tools Overview
+    if sub_choice is None or sub_choice == "🏠 Overview":
+        landing_page()
+    elif sub_choice == "📊 Customer Success Dashboard":
+        page_customer_success()
+    elif sub_choice == "☁️ Cloud Readiness Tool":
+        page_cloud_readiness()
+    elif sub_choice == "🗂️ PM Toolkit + Templates":
+        page_pm_toolkit()
