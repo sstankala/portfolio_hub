@@ -111,7 +111,7 @@ def landing_page():
 
     # ---------- Title + Intro ----------
     st.markdown(
-        '<p class="landing-title">Customer Success & Cloud Transformation Portfolio</p>',
+        '<p class="landing-title">Portfolio of Projects & Tool kits Customer Success, Cloud Transformation & Program Management</p>',
         unsafe_allow_html=True
     )
     st.markdown(
