@@ -1,3 +1,11 @@
-ID,Title,Description,Status (Backlog/In Progress/Blocked/Done),Assignee,Story Points,Priority (Low/Med/High),Sprint,Start Date,Due Date,Tags
-US-1,"Sample user story","As a <role>, I want <capability> so that <benefit>","Backlog",,,Medium,,,
-BUG-1,"Sample bug","Describe bug","Backlog",,,High,,,
+ID,Title,Description,Status,Assignee,Story Points,Priority,Sprint,Start Date,Due Date,Tags
+CR-101,Support for S3 Object Lock,Customer requests compliance retention using S3 Object Lock in on-prem cluster storage.,In Progress,John Doe,8,High,Sprint 24.1,2025-11-10,2025-11-25,security;compliance;aws-s3
+CR-102,Enhanced Node Failure Alerts,Need more granular notifications when storage nodes enter degraded state.,Backlog,Sarah K,5,Medium,Sprint 24.2,2025-11-20,2025-12-05,monitoring;alerts
+CR-103,UI Dashboard Latency Fix,Customer reports 5–8s UI load times when managing large RING clusters.,In Progress,Michael T,3,High,Sprint 24.1,2025-11-12,2025-11-20,ui;performance
+CR-104,NFSv4 Kerberos Integration,Customer wants secure NFSv4 access using Kerberos authentication.,Blocked,Security Team,13,High,Sprint 24.1,2025-11-10,2025-12-10,nfs;security;kerberos
+CR-105,Replication Job Pause/Resume Option,Add ability to pause and resume large-scale replication jobs.,Backlog,Emily R,8,Medium,Sprint 24.3,2025-12-01,2025-12-20,replication;ux
+CR-106,Custom Health Check API,Customer wants an API endpoint to expose extended node health metrics.,In Progress,DevOps Team,5,High,Sprint 24.1,2025-11-11,2025-11-22,api;monitoring
+CR-107,UI Role-Based Access Templates,Pre-built RBAC templates for Admin/Operator/Viewer roles.,Done,David P,3,Low,Sprint 23.9,2025-10-15,2025-10-31,rbac;ui
+CR-108,Automated Log Export to SIEM,Customer wants syslogs shipped automatically to Splunk via HTTPS.,Backlog,SecOps Team,8,High,Sprint 24.2,2025-11-25,2025-12-15,siem;logging;security
+CR-109,Cluster Expansion Wizard,Wizard-based UX to simplify adding new disks/nodes in 3 steps.,In Progress,UX Team,13,Medium,Sprint 24.1,2025-11-10,2025-11-30,ux;scalability
+CR-110,Snapshot Lifecycle Policies,Customer wants automated purge rules for local snapshots on cold tier storage.,Backlog,John Doe,5,Medium,Sprint 24.3,2025-12-05,2025-12-22,snapshots;automation
