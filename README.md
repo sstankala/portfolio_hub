@@ -11,7 +11,24 @@
 
 ## 🌟 About Me
 
-I am a **Senior Customer Success & Service Experience Leader** with expertise in:
+I am a **Senior Customer Success & Service Experience Leader** and results-oriented Customer Success and Program Delivery Leader with a proven track record of driving large-scale cloud, infrastructure, and enterprise modernization initiatives across global organizations. Over the past decade, I’ve partnered with enterprise and public-sector clients to deliver high-impact solutions that enhance performance, resilience, and customer satisfaction.
+
+My experience spans the full technology lifecycle—from solution design, implementation, and automation to customer onboarding, escalation management, and post-sales success. I specialize in aligning technology strategy with business outcomes, building trusted C-level relationships, and leading cross-functional teams to deliver measurable results.
+Key Areas of Expertise:
+Customer Success Management
+Program/ Project Management
+SDLC & Agile Methodologies
+Cloud/Datacenter Solutions 
+Applications Development & Maintenance Services
+Executive Engagement and Stakeholder expectation management
+Delivery Experience with Global Teams
+Proposals, SoWs and SLA term
+SaaS & Enterprise Product  Development solutions
+Certified Scrum Master
+ITIL® Foundation Certificate in IT Service Management 
+Microsoft Certified Azure Fundamentals (AZ-900)
+AWS Certified Cloud Practitioner (CLF-P01)
+AI Infrastructure and Operations Fundamentals (by NIVIDIA)
 
 - Customer Success Strategy & Health Scoring  
 - Cloud Migrations (AWS CAF | Well-Architected)  
