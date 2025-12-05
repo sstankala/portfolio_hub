@@ -53,8 +53,8 @@ Lightweight AWS CAF/WAF readiness assessment that outputs migration posture, ris
 ### 🔹 **3. PM Toolkit + Templates Generator**  
 A full PMO toolkit with RAID logs, RACI, charters, sprint boards, and weekly status templates.
 
-👉 **View the full portfolio:**  
-**https://github.com/sstankala/portfolio_hub**
+👉 **View the deploye portfolio:**  
+**[https://sstankala-portfolio.streamlit.app/](https://sstankala-portfolio.streamlit.app/)**
 
 ---
 
