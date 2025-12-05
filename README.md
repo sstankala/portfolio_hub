@@ -8,7 +8,8 @@
 </p>
 
 ---
-
+👉 View the deployed portfolio:
+https://sstankala-portfolio.streamlit.app/
 ## 🌟 About Me
 
 I am a **Senior Customer Success & Service Experience Leader** and results-oriented Customer Success and Program Delivery Leader with a proven track record of driving large-scale cloud, infrastructure, and enterprise modernization initiatives across global organizations. Over the past decade, I’ve partnered with enterprise and public-sector clients to deliver high-impact solutions that enhance performance, resilience, and customer satisfaction.
