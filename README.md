@@ -10,7 +10,7 @@
 ---
 👉 View the deployed portfolio:
 https://sstankala-portfolio.streamlit.app/ 
-On the deployed version, you will find CS dashboard, Cloud readiness tool and quick set of toolkit a CS Manager or Project Manager can adopt in their projects. Also, you will be able to modify the sample data sets in Customer Success Health Dashboard. You can even upload sample data and explore quick views of it. 
+<p> On the deployed version, you will find CS dashboard, Cloud readiness tool and quick set of toolkit a CS Manager or Project Manager can adopt in their projects. Also, you will be able to modify/download the sample data sets in these pages. For some of the tools, you can even upload sample data and explore quick views of it.</p>
 
 Few of snapshots for quick reference:
 Customer Success Health Dashboard#1
