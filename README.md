@@ -13,22 +13,22 @@ https://sstankala-portfolio.streamlit.app/
 <p> On the deployed version, you will find CS dashboard, Cloud readiness tool and quick set of toolkit a CS Manager or Project Manager can adopt in their projects. Also, you will be able to modify/download the sample data sets in these pages. For some of the tools, you can even upload sample data and explore quick views of it.</p>
 
 Few of snapshots for quick reference:
-Customer Success Health Dashboard#1
+<p>Customer Success Health Dashboard#1</p>
 <img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/3ff753fd-cc9a-4727-986a-e2ac2998214e" />
 
-Customer Success Health Dashboard#2
+<p>Customer Success Health Dashboard#2</p>
 <img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/8abe9ffa-e82b-4d8a-9a8f-34e148b59005" />
 
-Cloud Readiness Assessment Tool
+<p>Cloud Readiness Assessment Tool</p>
 <img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/9a9efcd6-49ea-4440-8a0d-86ad7f6881db" />
 
-Weekly Status Report#1 <we can have WSRs in many ways.., this is just one format for reference>
+<p>Weekly Status Report#1 (we can have WSRs in many ways.., this is just one format for reference)</p>
 <img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/32b7c177-f31d-4af6-9b7d-e07cd8d91af1" />
 
-Weekly Status Report#2
+<p>Weekly Status Report#2</p>
 <img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/1635b86d-5821-4652-a6ac-b916381a5590" />
 
-RAID Log (Risks, Assumptions, Issues, Dependencies) 
+<p>RAID Log (Risks, Assumptions, Issues, Dependencies)</p>
 <img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/b715ad12-0db6-487c-8df2-04e1d298d4ea" />
 
 ## 🌟 About Me
