@@ -9,7 +9,28 @@
 
 ---
 👉 View the deployed portfolio:
-https://sstankala-portfolio.streamlit.app/
+https://sstankala-portfolio.streamlit.app/ 
+On the deployed version, you will find CS dashboard, Cloud readiness tool and quick set of toolkit a CS Manager or Project Manager can adopt in their projects. Also, you will be able to modify the sample data sets in Customer Success Health Dashboard. You can even upload sample data and explore quick views of it. 
+
+Few of snapshots for quick reference:
+Customer Success Health Dashboard#1
+<img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/3ff753fd-cc9a-4727-986a-e2ac2998214e" />
+
+Customer Success Health Dashboard#2
+<img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/8abe9ffa-e82b-4d8a-9a8f-34e148b59005" />
+
+Cloud Readiness Assessment Tool
+<img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/9a9efcd6-49ea-4440-8a0d-86ad7f6881db" />
+
+Weekly Status Report#1 <we can have WSRs in many ways.., this is just one format for reference>
+<img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/32b7c177-f31d-4af6-9b7d-e07cd8d91af1" />
+
+Weekly Status Report#2
+<img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/1635b86d-5821-4652-a6ac-b916381a5590" />
+
+RAID Log (Risks, Assumptions, Issues, Dependencies) 
+<img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/b715ad12-0db6-487c-8df2-04e1d298d4ea" />
+
 ## 🌟 About Me
 
 I am a **Senior Customer Success & Service Experience Leader** and results-oriented Customer Success and Program Delivery Leader with a proven track record of driving large-scale cloud, infrastructure, and enterprise modernization initiatives across global organizations. Over the past decade, I’ve partnered with enterprise and public-sector clients to deliver high-impact solutions that enhance performance, resilience, and customer satisfaction.
