@@ -16,7 +16,7 @@ Few of snapshots for quick reference:
 <p>Customer Success Health Dashboard#1</p>
 <img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/3ff753fd-cc9a-4727-986a-e2ac2998214e" />
 
-<p>Customer Success Health Dashboard#2</p>
+<h3><p>Customer Success Health Dashboard#2</p></h3>
 <img width="1440" height="757" alt="image" src="https://github.com/user-attachments/assets/8abe9ffa-e82b-4d8a-9a8f-34e148b59005" />
 
 <p>Cloud Readiness Assessment Tool</p>
